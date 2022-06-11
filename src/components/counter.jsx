@@ -1,16 +1,9 @@
 import React, { Component } from "react";
 
 class Counter extends Component {
-  
-  // handleIncrement = (product) => {
-  //   console.log(product);
-  //   this.setState({ value: this.state.value + 1 });
-  // };
-
   render() {
     return (
       <React.Fragment>
-        {/* <h3>{this.props.id}</h3> */}
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
         <button
           onClick={() => this.props.onIncrement(this.props.counter)}
@@ -41,10 +34,3 @@ class Counter extends Component {
 }
 
 export default Counter;
-
-
-
-
-// state = {
-//   value: this.props.counter.value,
-// };
